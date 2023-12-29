@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studypoint</title>
+    <link href="img/image 6.png" rel="icon"/>
+    <link href="css/sdy.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+    function Enroll()
+        {
+            g=document.getElementById("Fname").value;
+            h=document.getElementById("Sname").value;
+            i=document.getElementById("Lname").value;
+            j=document.getElementById("Em").value;
+            k=document.getElementById("Mob").value;
+            l=document.getElementById("Dob").value;
+            m=document.getElementById("Cls").value;
+            n=document.getElementById("Iname").value;
+            g=g.toUpperCase();
+            h=h.toUpperCase();
+            i=i.toUpperCase();
+            n=n.toUpperCase();
+            o=g+" "+h+" "+i;
+            if(g=="")
+            {
+                alert("Enter the First name");
+                document.getElementById("Fname").focus();
+                return;
+            }
+            else if(j=="")
+            {
+                alert("Enter the Email");
+                document.getElementById("Em").focus();
+                return;
+            }
+            else if((k==""))
+            {
+                alert("Enter the Mobile number");
+                document.getElementById("Mob").focus();
+                return;
+            }
+            else if(l=="")
+            {
+                alert("Enter the Date of Birth");
+                document.getElementById("Dob").focus();
+                return;
+            }
+            else if(m=="")
+            {
+                alert("Enter the Classroom code");
+                document.getElementById("Cls").focus();
+                return;
+            }
+            else if(n=="")
+            {
+                alert("Enter the Institution Nmae");
+                document.getElementById("Iname").focus();
+                return;
+            }
+            if(m.length>4)
+            {
+                alert("Enter proper code")
+                document.getElementById("Cls").focus();
+            }
+            if(k.length>10)
+            {
+                alert("Invalid entry of mobilenumber")
+                document.getElementById("Mob").focus();
+            }
+            else
+            {
+                alert("Check the Preview and cross verify the details");
+                document.getElementById("Full").innerHTML=o;
+                document.getElementById("mailid").innerHTML=j;
+                document.getElementById("num").innerHTML=k;
+                document.getElementById("birth").innerHTML=l;
+                document.getElementById("cc").innerHTML=m;
+                document.getElementById("insname").innerHTML=n;
+            }
+        }
+    function Edit()
+        {
+            document.getElementById("Fname").focus();
+        }     
+    function Clear()
+        {
+            document.getElementById("Fname").value="";
+            document.getElementById("Sname").value="";
+            document.getElementById("Lname").value="";
+            document.getElementById("Em").value="";
+            document.getElementById("Mob").value="";
+            document.getElementById("Dob").value="";
+            document.getElementById("Cls").value="";
+            document.getElementById("Iname").value="";
+            document.getElementById("Full").innerHTML="";
+            document.getElementById("mailid").innerHTML="";
+            document.getElementById("num").innerHTML="";
+            document.getElementById("birth").innerHTML="";
+            document.getElementById("cc").innerHTML="";
+            document.getElementById("insname").innerHTML="";
+        }
+    window.onload=function()
+        {
+            u=localStorage.getItem('Register');
+            u=u.toUpperCase();
+            document.getElementById("usname").innerHTML="Hi " +u+ " !";
+            document.getElementById("Em").value=localStorage.getItem('Register2');
+        }
+    </script>
+</head>
+<body>
+    <div class="behind">
+        <div class="front">
+            <h1 id="usname"></h1>
+            <div class="front1"><h1>Enroll in Classroom</h1></div>
+            <div class="firstname">
+                <label for="Firstname">Firstname</label><br/>
+                <input type="text" id="Fname" placeholder="Enter your FirstName">
+            </div>
+            <div class="secondname">
+                <label for="secondname">Secondname</label><br/>
+                <input type="text" id="Sname" placeholder="Enter your SecondName">
+            </div>
+            <div class="lastname">
+                <label for="lastname">Lastname</label><br/>
+                <input type="text" id="Lname" placeholder="Enter your LastName">
+            </div>
+            <div class="Gm">
+                <label for="Email">Email</label><br/>
+                <input type="text" id="Em" placeholder="Enter your Email">
+            </div>
+            <div class="Mb">
+                <label for="mobilenumber">Mobile number</label><br/>
+                <input type="text" id="Mob" placeholder="Enter your Mobile Number">
+            </div>
+            <div class="Date">
+                <label for="Date of Birth">Date of Birth</label><br/>
+                <input type="date" id="Dob" placeholder="DD-MM-YYYY">
+            </div>
+            <div class="cc">
+                <label for="Classroom">Classroom Code</label><br/>
+                <input type="text" id="Cls" placeholder="Enter your Classroom Code">
+            </div>
+            <div class="Ins">
+                <label for="Institute">Institute Name</label><br/>
+                <input type="text" id="Iname" placeholder="Enter your Institution Name">
+            </div>
+            <button id="Er" onclick="Enroll()">Enroll</button>
+            <button id="Cl" onclick="Clear()">Clear</button>
+        </div>
+        <div class="prev">
+            <h2>Preview</h2>
+        </div>
+        <table>
+            <tr>
+                <th>Full Name</th><td id="Full"></td>
+            </tr>
+            <tr>
+                <th>E-mail</th><td id="mailid"></td>
+            </tr>
+            <tr>
+                <th>Mobile Number</th><td id="num"></td>
+            </tr>
+            <tr>
+                <th>Date of Birth</th><td id="birth"></td>
+            </tr>
+            <tr>
+                <th>Classroom Code</th><td id="cc"></td>
+            </tr>
+            <tr>
+                <th>Institution Name</th><td id="insname"></td>
+            </tr>
+        </table>
+        <button id="edit" onclick="Edit()">Edit</button>
+    </div>
+    
+</body>
+</html>

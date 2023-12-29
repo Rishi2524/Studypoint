@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studypoint</title>
+    <link href="img/image 6.png" rel="icon"/>
+    <link href="css/sdy.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        function Login()
+        {
+            x=document.getElementById("Username1").value;
+            y=document.getElementById("Pwd1").value;
+            z=localStorage.getItem('Register');
+            v=localStorage.getItem('Register1');
+            x=x.toUpperCase();
+            z=z.toUpperCase();
+            if((x==""))
+            {
+                alert("Enter the username");
+                document.getElementById("Username1").focus();
+                return;
+            }
+            if((y==""))
+            {
+                alert("Enter Password");
+                document.getElementById("Pwd1").focus();
+                return;
+            }
+            if((x == z) && (y == v))
+            {
+                alert("Correct Credential");
+                window.location.href="Profile.html"
+            }
+            else
+            {
+                alert("Invalid Credential");
+            }
+        }
+        function Showpwd()
+        {
+            c=document.getElementById("Pwd1");
+            if(c.type=="password")
+            {
+                c.type="text";
+            }
+          else
+            {
+                c.type="password";
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <div class="Back">
+        <h1>Study Point</h1>
+        <img id="Bg" src="img/study7.png" alt="pic"/>
+        <img id="logo" src="img/image6.png" alt="logo"/>
+        <div class="Back3">
+            <h2>Sign In</h2>
+            <div class="un1">
+                <label for="Username">Username </label><br/>
+                <input type="text" id="Username1" placeholder="Enter Name">
+            </div>
+            <div class="Pass1">
+                <label for="pass">Password </label><br/>
+                <input type="password" id="Pwd1" placeholder="Enter Password">
+                <button id="eye1" onclick="Showpwd()"><i class="fa fa-eye" ></i></button>
+            </div>
+            <button id="lg" onclick="Login()">Login</button>
+        </div>
+    </div>
+</body>
+</html>

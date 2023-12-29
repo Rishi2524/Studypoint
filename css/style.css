@@ -1,0 +1,657 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;   
+}
+.header
+{
+    background-color: gold;
+    width: 100%;
+    height:110px;
+}
+.header h1
+{
+    text-align: center;
+    position: relative;
+    top: 35px;
+}
+.content
+{
+    width: 100%;
+    height: 100px;
+    background-color: darkslategrey;
+}
+.plc
+{
+    width: 30%;
+    height: 50px;
+    float: left;
+    margin: 20px;
+    position: relative;
+    left: 250px;
+}
+#bp
+{
+    font-size: larger;
+    font-weight: bolder;
+    color: gold;
+}
+#cars
+{
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    border-color: black;
+    border-width: 2px;
+}
+#cars1
+{
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    border-color: black;
+    border-width: 2px;
+}
+#dp
+{
+    font-size: larger;
+    font-weight: bolder;
+    color: gold;
+}
+#ru
+{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: gold;
+    box-shadow: 0px 0px 5px;
+    position: relative;
+    top: 30px;
+    left: 220px;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+#ru:hover
+{
+    transform: translateY(-5px);
+}
+#info1
+{
+    font-size: larger;
+    font-weight: bolder;
+    color: gold;
+}
+#kilo
+{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+}
+.info
+{
+    width: 100%;
+    height: 70px;
+    background-color: darkslategrey;
+}
+.info2
+{
+    width: 350px;
+    height: auto;
+    float: left;
+    margin-right: 97px;
+    position: relative;
+    left: 265px;
+}
+#info3
+{
+    font-size: larger;
+    font-weight: bolder;
+    color: gold;
+}
+#time
+{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+}
+.price
+{
+    background-color: darkslategrey;
+    width: 100%;
+    height: 80px;
+}
+#price3
+{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+}
+#price1
+{
+    font-size: larger;
+    font-weight: bolder;
+    color: gold;
+}
+.price2
+{
+    width: 400px;
+    height: auto;
+    position: relative;
+    left: 265px;
+}
+.price button
+{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: gold;
+    box-shadow: 0px 0px 5px;
+    position: relative;
+    bottom: 35px;
+    left: 710px;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+.price button:hover
+{
+    transform: translateY(-5px);
+}
+#Clear
+{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: gold;
+    box-shadow: 0px 0px 5px;
+    position: relative;
+    bottom: 35px;
+    left: 740px;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+#Clear:hover
+{
+    transform: translateY(-5px);
+}
+.check
+{
+    width: 400px;
+    height: 500px;
+    background-color: gold;
+    border-radius: 20px;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+
+}
+.check h1
+{
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+.place1
+{
+    width: 400px;
+    height: 80px;
+   
+    position: relative;
+    top: 40px;
+}
+.place
+{
+    width: 120px;
+    height: auto;
+    background-color: darkslategrey;
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+    float: left;
+    margin-left: 50px;
+    position: relative;
+}
+
+.dis
+{
+    width: 70%;
+    height: auto;
+    background-color: darkslategrey;
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.check button
+{
+    width: 100px;
+    height: 50px;
+    color: #fff;
+    background-color: darkslategrey;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 5px;
+    position: relative;
+    top: 100px;
+    left: 150px;
+    transition: 0.4s ease-in-out;
+}
+.check button:hover
+{
+    transform: translateY(-10px);
+}
+.check img
+{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+.intro
+{
+    width: 100%;
+    height: 660px;
+    background-color: aqua;
+}
+.food
+{
+    width: 700px;
+    height: 400px;
+    background-color: black;
+    opacity: 0.7;
+    margin: 0 auto;
+    position: relative;
+    bottom: 500px;
+    border-radius: 50px;
+}
+.food h1
+{
+    color: #fff;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    top: 50px;
+    opacity: 1.7;
+}
+.food p
+{
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    position: relative;
+    top: 80px;
+    font-size: larger;
+}
+
+#signin
+{
+    width: 300px;
+    height: 50px;
+    position: relative;
+    left: 200px;
+    top: 100px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background-color: orange;
+    font-size: larger;
+    font-weight: bolder;
+    transition: 0.4s ease-in-out;
+}
+#signin:hover
+{
+    transform: translateY(-5px);
+}
+#signup
+{
+    width: 300px;
+    height: 50px;
+    position: relative;
+    right: 100px;
+    top: 160px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background-color: orange;
+    font-size: larger;
+    font-weight: bolder;
+    transition: 0.4s ease-in-out;
+}
+#signup:hover
+{
+    transform: translateY(-5px);
+}
+.sm
+{
+    width: 200px;
+    height: 70px;
+    position: relative;
+    left: 260px;
+    top: 180px;
+}
+.sm1
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    float: left;
+    margin-right: 10px;
+    transition: 0.4s ease-in-out;
+}
+.sm1:hover
+{
+    transform: translateY(-5px);
+}
+.intro1
+{
+    width: 100%;
+    height: 660px;
+}
+.food1
+{
+    width: 900px;
+    height: 500px;
+    background-color: black;
+    opacity: 0.7;
+    margin: 0 auto;
+    position: relative;
+    bottom:600px;
+    border-radius: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.food1 h1
+{
+    text-align: center;
+    color: #fff;
+    position: relative;
+    top: 20px;
+}
+.un
+{
+    width: 400px;
+    height: auto;
+    background-color: none;
+    color: #fff;
+    font-size: larger;
+    position: relative;
+    left: 100px;
+    font-weight:lighter;
+    position: relative;
+    top: 50px;
+}
+#Username
+{
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #fff;
+    text-align: center;
+    border: none;
+    position: relative;
+    top: 5px;
+}
+.Email
+{
+    width: 400px;
+    height: auto;
+    background-color: none;
+    color: #fff;
+    font-size: larger;
+    position: relative;
+    left: 100px;
+    font-weight:lighter;
+    position: relative;
+    top: 70px;
+}
+#Mail
+{
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #fff;
+    text-align: center;
+    border: none;
+    position: relative;
+    top: 5px;
+}
+.Pass
+{
+    width: 400px;
+    height: auto;
+    background-color: none;
+    color: #fff;
+    font-size: larger;
+    position: relative;
+    left: 100px;
+    font-weight:lighter;
+    position: relative;
+    top: 90px;
+}
+#Pwd
+{
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #fff;
+    text-align: center;
+    border: none;
+    position: relative;
+    top: 5px;
+}
+.MN
+{
+    width: 400px;
+    height: auto;
+    background-color: none;
+    color: #fff;
+    font-size: larger;
+    position: relative;
+    left: 100px;
+    font-weight:lighter;
+    position: relative;
+    top:110px;
+}
+#Mbn
+{
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #fff;
+    text-align: center;
+    border: none;
+    position: relative;
+    top: 5px;
+}
+#getstarted
+{
+    width: 300px;
+    height: 50px;
+    position: relative;
+    left: 500px;
+    bottom: 100px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background-color: orange;
+    font-size: larger;
+    font-weight: bolder;
+    transition: 0.4s ease-in-out;
+}
+#getstarted:hover
+{
+    transform: translateY(-5px);
+}
+#signin1
+{
+    width: 300px;
+    height: 50px;
+    position: relative;
+    left: 195px;
+    bottom: 30px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background-color: orange;
+    font-size: larger;
+    font-weight: bolder;
+    transition: 0.4s ease-in-out;
+}
+#signin1:hover
+{
+    transform: translateY(-5px);
+}
+.intro2
+{
+    width: 100%;
+    height: 660px;
+}
+.food2
+{
+    width: 900px;
+    height: 500px;
+    background-color: black;
+    opacity: 0.7;
+    margin: 0 auto;
+    position: relative;
+    bottom:600px;
+    border-radius: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.food2 h1
+{
+    text-align: center;
+    color: #fff;
+    position: relative;
+    top: 20px;
+}
+.un1
+{
+    width: 400px;
+    height: auto;
+    background-color: none;
+    color: #fff;
+    font-size: larger;
+    position: relative;
+    left: 100px;
+    font-weight:lighter;
+    position: relative;
+    top: 100px;
+}
+#Username1
+{
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #fff;
+    text-align: center;
+    border: none;
+    position: relative;
+    top: 5px;
+}
+.Email1
+{
+    width: 400px;
+    height: auto;
+    background-color: none;
+    color: #fff;
+    font-size: larger;
+    position: relative;
+    left: 100px;
+    font-weight:lighter;
+    position: relative;
+    top: 120px;
+}
+#Mail1
+{
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #fff;
+    text-align: center;
+    border: none;
+    position: relative;
+    top: 5px;
+}
+#login
+{
+    width: 300px;
+    height: 50px;
+    position: relative;
+    top: 150px;
+    left: 100px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background-color: orange;
+    font-size: larger;
+    font-weight: bolder;
+    transition: 0.4s ease-in-out;
+}
+#login:hover
+{
+    transform: translateY(-5px);
+}
+#auto
+{
+    width: 100px;
+    height: 30px;
+    background-color: orange;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    position:relative;
+    right: 310px;
+    bottom: 75px;
+}
+.ConfirmPass
+{
+    width: 400px;
+    height: auto;
+    background-color: none;
+    color: #fff;
+    font-size: larger;
+    position: relative;
+    left: 500px;
+    bottom: 300px;
+    font-weight:lighter;
+    position: relative;
+}
+#Pwd1
+{
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #fff;
+    text-align: center;
+    border: none;
+    position: relative;
+    top: 5px;
+}
+#eye
+{
+    font-size: 20px;
+    background: none;
+    position: relative;
+    right: 50px;
+    border: none;
+    top: 5px;
+
+}

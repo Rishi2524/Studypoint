@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studypoint</title>
+    <link href="img/image 6.png" rel="icon"/>
+    <link href="css/sdy.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        function Signup()
+        {
+            a=document.getElementById("Username").value;
+            b=document.getElementById("Mail").value;
+            c=document.getElementById("Pwd").value;
+            d=document.getElementById("Conpwd").value;
+            if((a==""))
+            {
+                alert("Fill the username");
+                document.getElementById("Username").focus();
+                return;
+            }
+            if((b==""))
+            {
+                alert("Fill the mail");
+                document.getElementById("Mail").focus();
+                return;
+            }
+            if((c==""))
+            {
+                alert("Fill the Password");
+                document.getElementById("Pwd").focus();
+                return;
+            }
+            if((d==""))
+            {
+                alert("Fill the Password");
+                document.getElementById("Conpwd").focus();
+                return;
+            }
+            if(c.length<8)
+            {
+                bor=document.getElementById("Pwd");
+                bor.style.border='solid red';
+                alert("Less than 8 characters");
+            }
+            if(c!=d)
+            {
+                bor=document.getElementById("Pwd1");
+                bor.style.border='solid red';
+                alert("Password not matching");
+            }
+            else
+            {
+                localStorage.setItem('Register',a);
+                localStorage.setItem('Register1',c);
+                localStorage.setItem('Register2',b);
+                window.location.href="Stdy3.html"
+                alert("Registeration Succcessfull");
+            }
+        }
+        function Auto()
+        {
+           document.getElementById("Pwd").value=generatePass();
+        } 
+        function generatePass()
+        {
+           let pass = '';
+           let str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
+                     'abcdefghijklmnopqrstuvwxyz0123456789@#$';
+ 
+            for (let i = 1; i <= 9; i++) 
+            {
+                let char = Math.floor(Math.random()* str.length + 1);
+                pass += str.charAt(char)
+            }
+ 
+                return pass;
+        }
+        function Signin()
+        {
+            window.location.href="Stdy3.html"
+        }
+        function Showpwd()
+        {
+            c=document.getElementById("Pwd");
+            if(c.type=="password")
+            {
+                c.type="text";
+            }
+          else
+            {
+                c.type="password";
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <div class="Back">
+        <h1>Study Point</h1>
+        <img id="Bg" src="img/study7.png" alt="pic"/>
+        <img id="logo" src="img/image6.png" alt="logo"/>
+    <div class="Back2">
+            <h2>Sign Up</h2>
+        <div class="un">
+            <label for="Username">Username </label><br/>
+            <input type="text" id="Username" placeholder="Enter Name">
+        </div>
+        <div class="Email">
+            <label for="email">Email </label><br/>
+            <input type="text" id="Mail" placeholder="Enter Email">
+        </div>
+        <div class="Pass">
+            <label for="pass">Password </label><br/>
+            <input type="password" id="Pwd" placeholder="Enter Password">
+            <button id="eye" onclick="Showpwd()"><i class="fa fa-eye" ></i></button>
+            <button id="auto" onclick="Auto()">Auto Generate</button>
+        </div>
+        <div class="ConPass">
+            <label for="Confirm Password">Confirm Password</label><br/>
+            <input type="password" id="Conpwd" placeholder="Enter Password">
+        </div>
+        <button id="Signup1" onclick="Signup()">Get Started</button>
+        <button id="Signin1" onclick="Signin()">Sign In</button>
+
+    </div>
+    </div>
+</body>
+</html>

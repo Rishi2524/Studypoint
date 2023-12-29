@@ -1,0 +1,788 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;   
+}
+.Back
+{
+    width: 100%;
+    height: 660px;
+    background-color: darkcyan;
+}
+.Back h1
+{
+    color: rgb(255, 255, 255);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    left: 140px;
+    top: 115px;
+}
+#Bg
+{
+    width: 600px;
+    height: 600px;
+    position: relative;
+    left: 650px;
+    top: 10px;
+}
+.Back1
+{
+    width: 600px;
+    height: 400px;
+    background-color: black;
+    opacity: 0.6;
+    border-radius: 30px;
+    position: relative;
+    bottom: 450px;
+    left: 45px;
+}
+#logo
+{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    bottom: 460px;
+    right: 550px;
+}
+.Back1 h2
+{
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#Signup
+{
+    width: 300px;
+    height: 60px;
+    background-color: rgb(249, 249, 249);
+    font-weight: bolder;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    position: relative;
+    left: 150px;
+    top: 120px;
+    transition: 0.4s ease-in-out;
+}
+#Signup:hover
+{
+    transform: translateY(-6px);
+}
+#Signin
+{
+    width: 300px;
+    height: 60px;
+    background-color: rgb(249, 249, 249);
+    font-weight: bolder;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    position: relative;
+    left: 150px;
+    top: 140px;
+    transition: 0.4s ease-in-out;
+}
+#Signin:hover
+{
+    transform: translateY(-6px);
+}
+.Back2
+{
+    width: 600px;
+    height: 400px;
+    background-color: black;
+    opacity: 0.6;
+    border-radius: 30px;
+    position: relative;
+    bottom: 450px;
+    left: 45px;
+    color: #fff;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Back2 h2
+{
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+.un
+{
+    width: 400px;
+    height: auto;
+    background-color: none;
+    color: #fff;
+    font-size: larger;
+    position: relative;
+    left: 100px;
+    font-weight:lighter;
+    position: relative;
+    top: 50px;
+}
+#Username
+{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #fff;
+    text-align: center;
+    border: none;
+    position: relative;
+    top: 5px;
+}
+.Email
+{
+    width: 400px;
+    height: auto;
+    background-color: none;
+    color: #fff;
+    font-size: larger;
+    position: relative;
+    left: 100px;
+    font-weight:lighter;
+    position: relative;
+    top: 70px;
+}
+#Mail
+{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #fff;
+    text-align: center;
+    border: none;
+    position: relative;
+    top: 5px;
+}
+.Pass
+{
+    width: 400px;
+    height: auto;
+    background-color: none;
+    color: #fff;
+    font-size: larger;
+    position: relative;
+    left: 100px;
+    font-weight:lighter;
+    position: relative;
+    top: 90px;
+}
+#Pwd
+{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #fff;
+    text-align: center;
+    border: none;
+    position: relative;
+    top: 5px;
+}
+#eye
+{
+    font-size: 20px;
+    background: none;
+    position: relative;
+    top: 5px;
+    right: 50px;
+    border:none ;
+    transition: 0.4s;
+}
+#eye:hover
+{
+    transform:scale(1.2) ;
+}
+.ConPass
+{
+    width: 400px;
+    height: auto;
+    background-color: none;
+    color: #fff;
+    font-size: larger;
+    position: relative;
+    left: 100px;
+    font-weight:lighter;
+    position: relative;
+    top: 90px;
+}
+#Conpwd
+{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #fff;
+    text-align: center;
+    border: none;
+    position: relative;
+    top: 5px;
+}
+#Signup1
+{
+    width: 140px;
+    height: 50px;
+    background-color: rgb(249, 249, 249);
+    font-weight: bolder;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    position: relative;
+    left: 440px;
+    bottom: 10px;
+    transition: 0.4s ease-in-out;
+}
+#Signup1:hover
+{
+    transform: translateY(-6px);
+}
+#Signin1
+{
+    width: 140px;
+    height: 50px;
+    background-color: rgb(249, 249, 249);
+    font-weight: bolder;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    position: relative;
+    left: 295px;
+    top: 50px;
+    transition: 0.4s ease-in-out;
+}
+#Signin1:hover
+{
+    transform: translateY(-6px);
+}
+.Back3
+{
+    width: 600px;
+    height: 400px;
+    background-color: black;
+    opacity: 0.6;
+    border-radius: 30px;
+    position: relative;
+    bottom: 450px;
+    left: 45px;
+    color: #fff;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Back3 h2
+{
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+.Pass1
+{
+    width: 400px;
+    height: auto;
+    background-color: none;
+    color: #fff;
+    font-size: larger;
+    position: relative;
+    left: 100px;
+    font-weight:lighter;
+    position: relative;
+    top: 90px;
+}
+#Pwd1
+{
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #fff;
+    text-align: center;
+    border: none;
+    position: relative;
+    top: 5px;
+}
+#eye1
+{
+    font-size: 20px;
+    background: none;
+    position: relative;
+    top: 5px;
+    right: 50px;
+    border: none;
+    transition: 0.4s;
+}
+#eye1:hover
+{
+    transform: scale(1.5);
+}
+.un1
+{
+    width: 400px;
+    height: auto;
+    background-color: none;
+    color: #fff;
+    font-size: larger;
+    position: relative;
+    left: 100px;
+    font-weight:lighter;
+    position: relative;
+    top: 50px;
+}
+#Username1
+{
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #fff;
+    text-align: center;
+    border:none;
+    position: relative;
+    top: 5px;
+}
+#lg
+{
+    width: 120px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    left: 280px;
+    top: 130px;
+    transition: 0.4s ease-in-out;
+}
+#lg:hover
+{
+    transform: translateY(-6px);
+}
+.sm
+{
+    width: 200px;
+    height: 70px;
+    position: relative;
+    left: 200px;
+    top: 160px;
+}
+.sm1
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    float: left;
+    margin-right: 10px;
+    transition: 0.4s ease-in-out;
+}
+.sm1:hover
+{
+    transform: translateY(-5px);
+}
+#auto
+{
+    width: 100px;
+    height: 20px;
+    background-color: #fff;
+    font-weight: bolder;
+    border-radius: 10px;
+    border: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position:relative;
+    bottom: 55px;
+    left: 200px;
+}
+.behind
+{
+    width: 100%;
+    height: 660px;
+    background-color: #fff;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.front
+{
+    width: 50%;
+    height: 660px;
+    background-color: darkcyan;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.front1
+{
+    width: 400px;
+    height: 50px;
+    background-color: #99d1d1;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    position: relative;
+    top: 300px;
+    right: 175px;
+    transform: rotate(270deg);  
+}
+.front1 h1
+{
+    color: #003838;
+    text-align: center;
+}
+#usname
+{
+    color: #fff;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    left: 50px;
+    top: 20px;
+}
+.firstname
+{
+    width: 400px;
+    height: auto;
+    background-color: none;
+    color: #fff;
+    font-size: larger;
+    position: relative;
+    left: 100px;
+    font-weight:lighter;
+    position: relative;
+    margin-bottom: 10px;
+  
+}
+#Fname
+{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #fff;
+    text-align: center;
+    border:none;
+    position: relative;
+    top: 5px;
+}
+.secondname
+{
+    width: 400px;
+    height: auto;
+    background-color: none;
+    color: #fff;
+    font-size: larger;
+    position: relative;
+    left: 100px;
+    font-weight:lighter;
+    position: relative;
+    margin-bottom: 10px;
+    
+}
+#Sname
+{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #fff;
+    text-align: center;
+    border: none;
+    position: relative;
+    top: 5px;
+}
+.lastname
+{
+    width: 400px;
+    height: auto;
+    background-color: none;
+    color: #fff;
+    font-size: larger;
+    position: relative;
+    left: 100px;
+    font-weight:lighter;
+    position: relative;
+    margin-bottom: 10px;
+}
+#Lname
+{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #fff;
+    text-align: center;
+    border: none;
+    position: relative;
+    top: 5px;
+}
+.Gm
+{
+    width: 400px;
+    height: auto;
+    background-color: none;
+    color: #fff;
+    font-size: larger;
+    position: relative;
+    left: 100px;
+    font-weight:lighter;
+    position: relative;
+    margin-bottom: 10px;
+}
+#Em
+{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #fff;
+    text-align: center;
+    border: none;
+    position: relative;
+    top: 5px;
+}
+.Mb
+{
+    width: 400px;
+    height: auto;
+    background-color: none;
+    color: #fff;
+    font-size: larger;
+    position: relative;
+    left: 100px;
+    font-weight:lighter;
+    position: relative;
+    margin-bottom: 10px;
+}
+#Mob
+{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #fff;
+    text-align: center;
+    border: none;
+    position: relative;
+    top: 5px;
+}
+.Date
+{
+    width: 400px;
+    height: auto;
+    background-color: none;
+    color: #fff;
+    font-size: larger;
+    position: relative;
+    left: 100px;
+    font-weight:lighter;
+    position: relative;
+    margin-bottom: 10px;
+}
+#Dob
+{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #fff;
+    text-align: center;
+    border: none;
+    position: relative;
+    top: 5px;
+}
+.cc
+{
+    width: 400px;
+    height: auto;
+    background-color: none;
+    color: #fff;
+    font-size: larger;
+    position: relative;
+    left: 100px;
+    font-weight:lighter;
+    position: relative;
+    margin-bottom: 10px;
+}
+#Cls
+{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #fff;
+    text-align: center;
+    border: none;
+    position: relative;
+    top: 5px;
+}
+.Ins
+{
+    width: 400px;
+    height: auto;
+    background-color: none;
+    color: #fff;
+    font-size: larger;
+    position: relative;
+    left: 100px;
+    font-weight:lighter;
+    position: relative;
+    margin-bottom: 10px;
+}
+#Iname
+{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #fff;
+    text-align: center;
+    border: none;
+    position: relative;
+    top: 5px;
+}
+#Er
+{
+    width: 120px;
+    height: 50px;
+    border: none;
+    background-color: #003838;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    left: 450px;
+    bottom: 260px;
+    transition: 0.4s ease-in-out;
+}
+#Er:hover
+{
+    transform: translateY(-6px);
+}
+#Cl
+{
+    width: 120px;
+    height: 50px;
+    border: none;
+    background-color: #003838;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    left: 325px;
+    bottom: 190px;
+    transition: 0.4s ease-in-out;
+}
+#Cl:hover
+{
+    transform: translateY(-6px);
+}
+.table
+{
+    width: 50%;
+    height: 660px;
+    background-color: blueviolet;
+    float: right;
+    position: relative;
+    bottom: 660px;
+}
+.behind table
+{
+    float: right;
+    position: relative;
+    bottom: 520px;
+    right: 50px;
+    border-collapse: collapse;
+    min-width: 500px;
+    overflow: hidden;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0.15);
+}
+.behind table tr th
+{
+    background-color: darkcyan;
+    border-bottom: 1px solid #dddd;
+    color: #fff;
+    width: 200px;
+    text-align:center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.behind table td
+{
+    padding: 12px 15px;
+    border-bottom: 1px solid #dddd;
+    background-color: #99d1d1;
+}
+.prev
+{
+    background-color: #003838;
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    text-align: center;
+    position: relative;
+    left: 800px;
+    bottom: 550px;
+    box-shadow: 0 0 5px rgba(0,0,0.15);
+
+}
+.prev h2
+{
+    position: relative;
+    top: 10px; 
+}
+#edit
+{
+    width: 120px;
+    height: 50px;
+    border: none;
+    background-color: #003838;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    left: 1180px;
+    bottom: 220px;
+    transition: 0.4s ease-in-out;
+}
+#edit:hover
+{
+    transform: translateY(-6px);
+}
+.sec
+{
+    width: 100%;
+    height: 650px;
+    background-color: aqua;
+}
+.not
+{
+    width: 50%;
+    height: 300px;
+    background-color: black;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.not1
+{
+    width: 100%;
+    height: auto;
+}
+.not1 h1
+{
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+#newsup
+{
+    width: 100%;
+    height: 200px;
+    background-color: none;
+    position: relative;
+    top: 40px;
+    text-align: center;
+}
